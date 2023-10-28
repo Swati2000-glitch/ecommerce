@@ -6,6 +6,7 @@ import { AdminComponent } from './components/admin.component';
 import { AdminProductsComponent } from './components/admin-products/admin-products.component';
 import { OrdersTableComponent } from './components/orders-table/orders-table.component';
 import { CustomersComponent } from './components/customers/customers.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,11 +15,13 @@ import { CustomersComponent } from './components/customers/customers.component';
     DashboardComponent,
     AdminProductsComponent,
     OrdersTableComponent,
-    CustomersComponent
+    CustomersComponent,
+    
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    FormsModule
   ],
  
 })
