@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./customers.component.scss']
 })
 export class CustomersComponent {
+  customer = {
+    name: '',
+     email :'',
+    phone: '',
+    address: '',
+    
+  };
+  profileForm: any;
 
+  updateProfile() {
+    this.profileForm.patchValue({
+      firstName: 'Nancy',
+      address: {
+        street: '123 Drew Street'
+      }
+    });
+  }
+  
 }
+
